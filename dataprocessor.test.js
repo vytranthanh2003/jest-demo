@@ -3,14 +3,14 @@ const filterActiveUsers = require('./dataprocessor');
 describe('Data Processor', () => {
     test('Filter active users', () => {
         const users = [
-            { id: 1, name: 'Alice', active: true },
-            { id: 2, name: 'Bob', active: false },
-            { id: 3, name: 'Charlie', active: true }
+            { id: 1, name: 'Vỹ', active: true },
+            { id: 2, name: 'Tuấn', active: false },
+            { id: 3, name: 'Trí', active: true }
         ];
         const result = filterActiveUsers(users);
         expect(result).toEqual([
-            { id: 1, name: 'Alice', active: true },
-            { id: 3, name: 'Charlie', active: true }
+            { id: 1, name: 'Vỹ', active: true },
+            { id: 3, name: 'Trí', active: true }
         ]);
     });
 
